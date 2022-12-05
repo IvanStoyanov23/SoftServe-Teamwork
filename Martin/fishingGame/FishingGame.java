@@ -1,20 +1,19 @@
 package test;
 
-public class FishingGame extends Pond{
+public class FishingGame{
 
 	public static void main(String[] args) {
+		Pond pond = new Pond();
 		
-		getFishes();
-		showState();
-		String name = obtainFish();
-		if(checkExist(name)) {
+		pond.getFishes();
+		pond.showState();
+		String name = pond.obtainFish();
+		if(pond.checkExist(name)) {
 			System.out.println("You alredy have this type fish");
 		}else {
 			System.out.println("You have new fish: "+name);
 		}
-		lostFish("Shark");
-		showState();
-
+		pond.lostFish("Shark");
+		pond.showState();
 	}
-
 }
