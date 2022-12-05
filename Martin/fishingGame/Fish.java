@@ -1,6 +1,9 @@
 package test;
 
+
 public class Fish {
-	public int id;
-	public String name;
+	
+	public final static String[] fish = {"Carp","Clownfish","Eel","Flounder","Herring"
+			,"Lionfish","Puffer","Shark","Crow","Sturgeon","Sunfish","Tarpon","Tuna","Whale"};
+	
 }
