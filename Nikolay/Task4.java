@@ -3,19 +3,14 @@
 import java.util.Scanner;
 
 public class Task4 {
-
-    // Function that implements the
-    // number guessing game
     public static void
     guessingNumberGame() {
-        // Scanner Class
+   
         Scanner sc = new Scanner(System.in);
 
-        // Generate the numbers
+
         int number = 1 + (int) (100
                 * Math.random());
-
-        // Given K trials
         int K = 10;
 
         int i, guess;
@@ -25,17 +20,13 @@ public class Task4 {
                         + " between 1 to 100."
                         + "Guess the number"
                         + " within 5 trials.");
-
-        // Iterate over K Trials
         for (i = 0; i < K; i++) {
 
             System.out.println(
                     "Guess the number:");
 
-            // Take input for guessing
             guess = sc.nextInt();
 
-            // If the number is guessed
             if (number == guess) {
                 System.out.println(
                         "Congratulations!"
@@ -64,11 +55,11 @@ public class Task4 {
         }
     }
 
-    // Driver Code
+
     public static void
     main(String arg[]) {
 
-        // Function Call
+    
         guessingNumberGame();
     }
 }
