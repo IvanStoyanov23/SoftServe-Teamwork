@@ -29,21 +29,14 @@ import java.util.Collections;
     static void sortMatRowAndColWise(Integer mat[][],
                                      int n)
     {
-        // sort rows of mat[][]
+       
         sortByRow(mat, n, true);
-
-        // get transpose of mat[][]
         transpose(mat, n);
-
-        // again sort rows of mat[][] in descending
-        // order.
         sortByRow(mat, n, false);
-
-        // again get transpose of mat[][]
         transpose(mat, n);
     }
 
-    // function to print the matrix
+
     static void printMat(Integer mat[][], int n)
     {
         for (int i = 0; i < n; i++)
@@ -54,7 +47,7 @@ import java.util.Collections;
         }
     }
 
-    // Driver code
+
     public static void main (String[] args)
     {
         int n = 3;
