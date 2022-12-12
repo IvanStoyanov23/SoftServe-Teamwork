@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Task1 {
 
 	public static void main(String[] args) {
+	
+		//Find the sum of all numbers from -5.5 to a with a step of h (the number a is entered from the keyboard).
 		final String ANSI_GREEN = "\u001B[32m", RESET_COLOR = "\u001B[0m";
 		Scanner sc = new Scanner(System.in);
 
