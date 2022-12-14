@@ -1,4 +1,4 @@
-package test;
+package game;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -10,6 +10,7 @@ public class Pond {
 	public void getFishes() {
 		Random rn = new Random();
 		int number = rn.nextInt(14);
+		System.out.println("\nThis is your fish list!\n");
 
 		for (int i = 0; i < number; i++) {
 			fishList.add(Fish.values()[i].toString());
